@@ -69,7 +69,5 @@ int main(int argc, char **argv, char **env)
 		length = 0, buffer = NULL; /*reset for getline*/
 		print_dollar();
 	}
-	if (characters == -1)
-		return (EXIT_FAILURE);
-	return (EXIT_SUCCESS);
+	return ((characters == -1) ? EXIT_FAILURE : EXIT_SUCCESS);
 }
